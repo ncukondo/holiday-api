@@ -1,0 +1,18 @@
+{
+  "name": "holiday-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Takeshi Kondo",
+  "license": "MIT",
+  "scripts": {
+    "refresh": "node refreshjson.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "ical": "^0.6.0",
+    "iconv": "^2.3.5",
+    "iconv-lite": "^0.5.1",
+    "jschardet": "^2.1.1",
+    "moment": "^2.24.0"
+  }
+}
