@@ -80,9 +80,23 @@ async function refreshJson(){
   const newData = await getData();
   const result = mergeData(prevData,newData.holidays,newData.startDate,newData.endDate)
   await saveJson(JSON_FILE_PATH,result);
+  return  JSON.stringify(result);
 
 }
 
 
 module.exports = getData;
-refreshJson();
+
+console.log(process.env.SLACK_URL);
+function postSlack(text){
+  var payload = {
+      "text" : text // メッセージの本文
+  };
+
+  const WEBHOOK_URL = process.env.SLACK_URL;
+  axios.post(WEBHOOK_URL,payload)
+}
+;(async function(){
+postSlack(await refreshJson());
+})();
+
