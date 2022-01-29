@@ -8,7 +8,7 @@
     "refresh": "node refreshjson.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "ical": "^0.6.0",
     "iconv": "^2.3.5",
     "iconv-lite": "^0.5.1",
