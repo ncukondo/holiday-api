@@ -1,5 +1,9 @@
 .env
 .now
+<<<<<<< HEAD
 node_modules
 json/**/*.json
 .envrc
+=======
+node_modules
+>>>>>>> parent of 2d89beb (slack-notify)
