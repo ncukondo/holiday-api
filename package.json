@@ -13,6 +13,6 @@
     "iconv": "^2.3.5",
     "iconv-lite": "^0.5.1",
     "jschardet": "^2.1.1",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   }
 }
